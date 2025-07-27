@@ -1,16 +1,16 @@
-const getToken = () : string | null => {
+const getToken = (): string | null => {
   return sessionStorage.getItem('token');
-}
+};
 
-const getItem = (key: string) : string | null => {
+const getItem = (key: string): string | null => {
   return sessionStorage.getItem(key);
 };
 
-const setItem = (key: string, object: string) : void => {
+const setItem = (key: string, object: string): void => {
   sessionStorage.setItem(key, object);
 };
 
-const removeItem = (key: string) : void => {
+const removeItem = (key: string): void => {
   sessionStorage.removeItem(key);
 };
 
